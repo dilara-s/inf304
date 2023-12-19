@@ -1,25 +1,23 @@
 package ru.itis.inf304;
 
 public abstract class Human {
+    protected String name;
+    protected Gender gender;
 
-    Gender gender;
-    public Human(Gender gender) {
-        gender = this.gender;
-    }
-    public String getGender () {
-        for (Gender c : Gender.values()) {
-            switch (c) {
-                case male : return "male";
-                case female : return "female";
-            }
-        }
-        return "do not determined";
+    public void setName(String name) {
+        this.name = name;
     }
 
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
 
-    enum Gender {
-        male, female;
+    public String getName() {
+        return name;
+    }
 
+    public Gender getGender() {
+        return gender;
     }
 }
 
