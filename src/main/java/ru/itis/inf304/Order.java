@@ -17,4 +17,8 @@ public class Order {
         this.date = date;
     }
 
+    @Override
+    public String toString() {
+        return "customer=" + customer.name + ", cooker=" + cooker.name + ", pizza=" + pizza + ", orderStatus=" + orderStatus + ", orderNumber=" + orderNumber + ", date='" + date + "'";
+    }
 }
