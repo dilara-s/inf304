@@ -5,5 +5,6 @@ public class Cooker extends Human{
         this.name = name;
         this.gender = gender;
     }
+    private int Age;
 
 }
